@@ -1,0 +1,15 @@
+RESULTADOS Y CONCLUSIONES - EJERCICIO 1
+
+1. ESTABILIDAD DEL ESCENARIO
+   - Se ejecutó una prueba de carga con 30 usuarios concurrentes durante 60 segundos.
+   - Se logró estabilizar el throughput (tasa de transacciones) en aproximadamente 20 TPS, cumpliendo el objetivo del ejercicio.
+
+2. VALIDACIONES DE RESPUESTA
+   - Se detectó que el servicio responde con un código HTTP 201 (Created) en lugar del estándar 200. Se ajustó el script para validar este comportamiento como exitoso.
+   - El 100% de las peticiones fueron exitosas (0% de tasa de error), cumpliendo el margen permitido del 3%.
+
+3. TIEMPOS DE RESPUESTA
+   - El tiempo promedio de respuesta se mantuvo por debajo de los 1.5 segundos requeridos promediando 304ms
+
+CONCLUSIÓN FINAL
+El servicio de autenticación de FakeStoreAPI soporta la carga solicitada sin degradación de servicio ni errores funcionales bajo las condiciones de red probadas.
